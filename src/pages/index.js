@@ -1,10 +1,13 @@
 import * as React from "react"
-import HomeNav from "../components/HomeNav" 
+import HomeNav from "../components/HomeNav";
+import "../components/home.css";
+import home from "../images/magicks.png";
+
 
 const IndexPage = () => (
-  <section style={{backgroundColor:"#DD0BE6", flex:"start", width: "50%"}}>
-    <HomeNav />
-    <h1>Magicks and Mullets</h1>
+  <section>
+    <HomeNav/>
+    <img src={home} style={{justifyContent:"center", display:"block", margin:"auto", width:"70%"}}/>
   </section>
 )
 
